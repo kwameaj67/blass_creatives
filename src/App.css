@@ -1,3 +1,7 @@
+::root {
+  --orange:#F1592A
+  --teal:#13A89E
+}
 *{
   margin:0;
   padding:0;
