@@ -1,0 +1,24 @@
+img {
+   width: 40px;
+   height: 40px; 
+}
+.app-logo {
+    height: 40vmin;
+    pointer-events: none;
+    animation:20s infinite linear;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: app-logo  20s infinite linear;
+    }
+  }
+  @keyframes app-logo {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
