@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-// import logo from './assets/blass.png';
+import logo from './assets/blass.png';
 import './App.css';
 import './AppResponsive.css';
-import Loader from './components/Loader/Loader'
+// import Loader from './components/Loader/Loader'
 // import Carousel from './components/Carousel/Carousel'
 
 function App() {
@@ -15,11 +15,11 @@ function App() {
     // },2000)
   },[])
   return (
-    <body>
-      <div className="App">
+    <div className="App">
            <section className="main-area">
               <nav className="navbar">
-                <Loader/>
+                {/* <Loader/> */}
+                <img className="logo-img" src={logo} alt="brass" style={{width:80,height:60}} />
                 <ul className={showMenu ? "nav-menu active" : "nav-menu"}>
                   <li><a href="#home">Home</a></li>
                   <li><a href="#about">About</a></li>
@@ -34,9 +34,9 @@ function App() {
               </nav>
               {/* <div className="socials">
                       <ul>
-                        <li><a href="#social"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#social"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#social"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#social"><i className="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#social"><i className="fab fa-twitter"></i></a></li>
+                        <li><a href="#social"><i className="fab fa-instagram"></i></a></li>
                       </ul>
               </div> */}
               <div className="intro-header">
@@ -48,8 +48,7 @@ function App() {
                 {/* <Carousel/> */}
            </section>
            <script src="toogleMenu.js"></script>
-      </div>
-    </body>
+    </div>
   );
 }
 
