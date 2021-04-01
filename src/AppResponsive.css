@@ -1,4 +1,8 @@
 @media screen and (max-width:769px){
+    .main-area{
+        width: 100%;
+        height: 100vh;
+    }
     .nav-menu{
         opacity: 0;
         bottom:200px;
@@ -48,11 +52,27 @@
       #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
       }
+      .intro-header{
+          text-align: center;
+      }
       .intro-header h1{
         color: var(--orange);
-        font-size: 4.5rem;
+        font-size: 4rem;
         font-weight: 700;
         letter-spacing: 2%;
       }
+      .about-area{
+          text-align: center;
+      }
+      .about-area .separator{
+          display: none;
+      }
      
+}
+
+/* hide separtor */
+@media screen and (max-width:1148px){
+    .about-area .separator{
+        display: none;
+    }
 }
