@@ -21,7 +21,7 @@ function App() {
            <section className="main-area">
               <nav className="navbar">
                 {/* <Loader/> */}
-                <img className="logo-img" src={logo} alt="brass" style={{width:80,height:60}} />
+                <img className="logo-img" src={logo} alt="brass" style={{width:80,height:60}} loading="lazy" />
                 <ul className={showMenu ? "nav-menu active" : "nav-menu"}>
                   <li><a href="#home">Home</a></li>
                   <li><a href="#about">About</a></li>
@@ -42,9 +42,9 @@ function App() {
            <section className="about-area" id="about">
                <div className="grid-container">
                       <div className="grid-50  mobile-grid-100 about-imgs">
-                          <img src={group} alt="group2" className="group-color" />
-                          <img src={HUGHES2} alt="group2" className="HUGHES2" />
-                          <img src={group} alt="group2" className="group-color2" />
+                          <img src={group} alt="group2" className="group-color" loading="lazy" />
+                          <img src={HUGHES2} alt="group2" className="HUGHES2" loading="lazy"/>
+                          <img src={group} alt="group2" className="group-color2" loading="lazy" />
                       </div>
                       <div className="grid-10 separator"></div>
                       <div className="grid-40 mobile-grid-100 text">
@@ -95,46 +95,46 @@ function App() {
                           <div className="accessories-item">
                             <div className="grid-container">
                                 <div className="grid-50  mobile-grid-100 ">
-                                    <img src={access1} alt="accessories" className="access-img"/>
+                                    <img src={access1} alt="accessories" className="access-img" loading="lazy"/>
                                 </div>
                                 <div className="grid-50 mobile-grid-100">
                                     <div className="details">
                                           <h4>Camera</h4>
                                           <div className="other-details">
-                                             <i class="fas fa-caret-right"></i>
+                                             <i className="fas fa-caret-right"></i>
                                              <p>Canon EOS R</p>
                                           </div>
                                     </div>
                                     <div className="details">
                                           <h4>Lenses</h4>
                                           <div className="other-details">
-                                             <i class="fas fa-caret-right"></i>
+                                             <i className="fas fa-caret-right"></i>
                                              <p>Canon RE 85mm f/1.2l USM Lens</p>
                                           </div>
                                           <div className="other-details">
-                                             <i class="fas fa-caret-right"></i>
+                                             <i className="fas fa-caret-right"></i>
                                              <p>Canon RE 15-35mm f/1.8l 15 USM Lens</p>
                                           </div>
                                     </div>
                                     <div className="details">
                                           <h4>Filters</h4>
                                           <div className="other-details">
-                                             <i class="fas fa-caret-right"></i>
+                                             <i className="fas fa-caret-right"></i>
                                              <p>Polar PRO Mckinnon Edition 82mm</p>
                                           </div>
                                           <div className="other-details">
-                                             <i class="fas fa-caret-right"></i>
+                                             <i className="fas fa-caret-right"></i>
                                              <p>Variable MO 2.5 Filter</p>
                                           </div>
                                     </div>
                                     <div className="details">
                                           <h4>Lights</h4>
                                           <div className="other-details">
-                                             <i class="fas fa-caret-right"></i>
+                                             <i className="fas fa-caret-right"></i>
                                              <p>Profoto B10 Air Ttl</p>
                                           </div>
                                           <div className="other-details">
-                                             <i class="fas fa-caret-right"></i>
+                                             <i className="fas fa-caret-right"></i>
                                              <p>Aputure LS C300d II</p>
                                           </div>
                                     </div>
@@ -146,54 +146,54 @@ function App() {
                                       <div className="details">
                                             <h4>Storage</h4>
                                             <div className="other-details">
-                                                <i class="fas fa-caret-right"></i>
+                                                <i className="fas fa-caret-right"></i>
                                                 <p>Gnarbox 2.0(512SSD)</p>
                                             </div>
                                             <div className="other-details">
-                                                <i class="fas fa-caret-right"></i>
+                                                <i className="fas fa-caret-right"></i>
                                                 <p>Sanddisk Extreme Pro</p>
                                             </div>
                                       </div>
                                       <div className="details">
                                             <h4>Audio</h4>
                                             <div className="other-details">
-                                                <i class="fas fa-caret-right"></i>
+                                                <i className="fas fa-caret-right"></i>
                                                 <p>Rode Wireless GO</p>
                                             </div>
                                       </div>
                                       <div className="details">
                                             <h4>GIMBAL</h4>
                                             <div className="other-details">
-                                                <i class="fas fa-caret-right"></i>
+                                                <i className="fas fa-caret-right"></i>
                                                 <p>DJI RS 2</p>
                                             </div>
                                             <div className="other-details">
-                                                <i class="fas fa-caret-right"></i>
+                                                <i className="fas fa-caret-right"></i>
                                                 <p>DJI Ronin S</p>
                                             </div>
                                       </div>
                                       <div className="details">
                                             <h4>Tripod</h4>
                                             <div className="other-details">
-                                              <i class="fas fa-caret-right"></i>
+                                              <i className="fas fa-caret-right"></i>
                                               <p>Profoto B10 Air Ttl</p>
                                             </div>
                                             <div className="other-details">
-                                              <i class="fas fa-caret-right"></i>
+                                              <i className="fas fa-caret-right"></i>
                                               <p>Manfrotto MVMXPRO500US XPRO</p>
                                             </div>
                                             <div className="other-details">
-                                              <i class="fas fa-caret-right"></i>
+                                              <i className="fas fa-caret-right"></i>
                                               <p>Neewer PRO 100</p>
                                             </div>
                                             <div className="other-details">
-                                              <i class="fas fa-caret-right"></i>
+                                              <i className="fas fa-caret-right"></i>
                                               <p>Joby Gorilla Pod 5k</p>
                                             </div>
                                       </div>
                                   </div>
                                   <div className="grid-50  mobile-grid-100 ">
-                                      <img src={access1} alt="accessories" className="access-img"/>
+                                      <img src={access1} alt="accessories" className="access-img" loading="lazy"/>
                                   </div>
                               </div>
                             </div>
