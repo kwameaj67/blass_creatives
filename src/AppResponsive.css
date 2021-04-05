@@ -61,11 +61,16 @@
         font-weight: 700;
         letter-spacing: 2%;
       }
+      /* about */
       .about-area{
           text-align: center;
       }
       .about-area .separator{
           display: none;
+      }
+      /* accessories */
+      .background-header{
+          text-align: center;
       }
      
 }
