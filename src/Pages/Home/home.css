@@ -1,0 +1,403 @@
+:root {
+    --orange:#F1592A;
+    --teal:#13A89E;
+  }
+.main-area{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/william-thomas-ny6tO4ItOEY-unsplash.jpg") ;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    background-position: center;
+  }
+  
+  .intro-header {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0px 30px 100px;
+    margin: 0px 15rem;
+    line-height: 10px;
+  }
+  .intro-header h1{
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2%;
+    /* line-height: 3rem; */
+  }
+  .intro-header p{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2%;
+    margin-top: 1rem;
+    line-height: 2rem;
+  }
+  
+  /* about area */
+  
+  .about-area{
+    margin: 6rem 0rem;
+    text-align: center;
+  }
+  .about-area .carousel{
+    margin-bottom: 2rem;
+    position: relative;
+    bottom:50px;
+  }
+  .about-area .carousel .fas{
+    font-size: 24px;
+    color: white;
+  }
+  .about-area .carousel img{
+    width: 100vw;
+    height: 100vh;
+  }
+  .about-area .about-imgs{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+  }
+  .about-area .group-color{
+    position:relative;
+    width:100px;
+    height: auto;
+    /* top:40px; */
+    display: flex;
+    align-self: flex-start;
+    
+  }
+  .about-area .group-color2{
+    position:relative;
+    width:100px;
+    height: auto;
+    bottom:100px;
+    /* left: 430px; */
+    display: flex;
+    align-self: flex-end;
+  }
+  .about-area .HUGHES2{
+    width:450px;
+    height: auto;
+    position: relative;
+    z-index: 999;
+    /* left: 40px; */
+    bottom: 60px;
+    display: flex;
+    align-self: center;
+  }
+  .about-area .separator{
+    width:2px;
+    height: 680px;
+    background-color: var(--teal);
+    display: block;
+    border-radius: 10px;
+    margin: 0rem 1rem;
+    /* margin: 6px 0; */
+  }
+  .about-area .text h1{
+    color: var(--orange);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+  }
+  .about-area .text p{
+    color: #919191;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 30px;
+  }
+  /* gallery */
+  .gallery-area{
+    margin: 6rem 0rem;
+  }
+  .gallery-area  .background-header{
+    width: 100%;
+    height: 40vh;
+    background-image: url("../../assets/william-thomas-ny6tO4ItOEY-unsplash.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #adcecc;
+  }
+  .gallery-area  .background-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery-area  .background-header h1{
+    color: var(--orange);
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2%;
+  }
+  .my-gallery{
+    width: 100%;
+    margin: 6rem 0rem;
+    text-align: center;
+  }
+  .my-gallery .gallery-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .my-gallery .image{
+      width: 145px;
+      height: auto;
+  }
+  .my-gallery .image1{
+    width:20vw;
+    height: 40vh;
+    background-image: url("../../assets/755bc551-4b94-4b27-a4bd-7295625995cb 2.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #adcecc;
+    /* max-width:100%;
+    max-height:100%; */
+    margin: 4px 4px;
+   
+    
+  }
+  .my-gallery .image2{
+    width:20vw;
+    height: 40vh;
+    background-image: url("../../assets/ayo-ogunseinde-1L5QpkSs5IU-unsplash.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #adcecc;
+    max-width:100%;
+    max-height:100%;
+    margin: 4px 4px;
+   
+  }
+  .my-gallery .image3{
+    width:20vw;
+    height: 40vh;
+    background-image: url("../../assets/jd-mason-qvqMQf9mg04-unsplash.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #adcecc;
+    max-width:100%;
+    max-height:100%;
+    margin: 4px 4px;
+   
+  }
+  .my-gallery .image4{
+    width:20vw;
+    height: 40vh;
+    background-image: url("../../assets/HUGHES2.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #adcecc;
+    max-width:100%;
+    max-height:100%;
+    margin: 4px 4px;
+   
+  }
+  .my-gallery .image5{
+    width:20vw;
+    height: 40vh;
+    background-image: url("../../assets/quaid-lagan-92YQRw3-__I-unsplash.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #adcecc;
+    max-width:100%;
+    max-height:100%;
+    margin: 4px 4px;
+   
+  }
+  .my-gallery .image6{
+    width:20vw;
+    height: 40vh;
+    background-image: url("../../assets/oladimeji-odunsi-wecunh3nBrA-unsplash.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #adcecc;
+    max-width:100%;
+    max-height:100%;
+    margin: 4px 4px;
+   
+  }
+  
+  .my-gallery .gallery-img{
+    width:100%;
+    height: auto;
+    padding:0rem 0.6rem;
+  }
+  .gallery-area .view-btn{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .gallery-area .view-btn button{
+    background-color: var(--orange);
+    color: white;
+    padding:15px 80px;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow:var(--orange);
+    border-radius: 2px;
+  }
+  .gallery-area .view-btn button:hover{
+    background-color: #e6410f;
+    transition: all 0.3s ease-in;
+  }
+  
+  /* accessories */
+  .accessories-area{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    width: 100%;
+  }
+  
+  .accessories-area  .background-header{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-image: url("../../assets/top-view-of-work-space-photographer-and-accesories.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .accessories-area  .background-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .accessories-area  .background-header h1{
+    color: var(--orange);
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2%;
+  }
+  .accessories-area  .background-header p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1%;
+    margin-top: 10px;
+  }
+  .accessories-area .accessories-item-container{
+    margin: 4rem 0rem;
+  }
+  .accessories-area  .accessories-item-container h1{
+    color: rgb(37, 37, 37);
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1%;
+    text-align: center;
+  
+  }
+  .accessories-area  .accessories-item{
+    margin: 6rem 0rem;
+   text-align: center;
+    
+  }
+  .accessories-area .accessories-item .access-img{
+    width: 500px;
+    height: auto;
+  }
+  .accessories-area .accessories-item .details{
+    text-align: start;
+    margin-bottom: 40px;
+  }
+  .accessories-area .accessories-item .details .other-details{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .accessories-area .accessories-item .details h4{
+    color: #494949;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  .accessories-area .accessories-item .details .other-details .fa-caret-right{
+    font-size: 18px;
+    color: var(--orange);
+    padding-right: 8px;
+    padding-bottom: 20px;
+  }
+  .accessories-area .accessories-item .details .other-details p{
+    color: #494949;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* footer-area */
+  .footer-area{
+    background-color: #494949;
+    height:24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .socials ul li{
+    display: inline-block;
+    margin:20px 12px;
+    list-style: none;
+  
+  }
+  .socials ul li a{
+    background-color: var(--orange);
+    border-radius: 10px;
+    padding:8px 15px;
+    color:white;
+    font-size: 18px;
+  }
+  .socials ul li a:hover{
+    transition: all 0.3s ease-in;
+    background-color: var(--orange);
+    color:#494949;
+  
+  }
+  .footer-area p{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2%;
+    margin-top: 20px;
+  }
+  .footer-area .design {
+    color:var(--orange);
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2%;
+    margin-top: 20px;
+    text-decoration: none;
+  }
