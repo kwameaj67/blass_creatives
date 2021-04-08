@@ -163,11 +163,12 @@
       .gallery-img  .gall8,
       .gallery-img  .gall9{
         width:100vw;
-        height: 60vh;
+        height: 70vh;
         margin: 0px 0px;
     } 
       .gallery-img  .gall9{
         bottom: 0px;
+        right:0px;
     }
       .gallery-img  .gall7{
         position: relative;
