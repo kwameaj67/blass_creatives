@@ -1,0 +1,23 @@
+/* bottom-scroll */
+.bottom-scroll{
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+ 
+}
+.bottom-scroll .scroll-container{
+  background-color:var(--orange);
+  border-radius: 5px; 
+  padding: 10px 15px;
+}
+.bottom-scroll .scroll-container button{
+  border: none; 
+  outline: none;
+  cursor: pointer; 
+  background-color: transparent;
+}
+.bottom-scroll .scroll-container button .fas{
+    font-size: 24px;
+    color: black;
+}
