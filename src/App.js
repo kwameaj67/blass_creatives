@@ -8,16 +8,34 @@ import HUGHES2 from './assets/HUGHES2.jpg'
 // import gallery4 from './assets/HUGHES2.jpg'
 // import gallery5 from './assets/quaid-lagan-92YQRw3-__I-unsplash.jpg'
 // import gallery6 from './assets/oladimeji-odunsi-wecunh3nBrA-unsplash.jpg'
-import access1 from './assets/alexander-london-9g-IuCd8iaQ-unsplash.jpg'
+import access1 from './assets/conor-luddy-IVaKksEZmZA-unsplash (1).jpg'
+import access2 from './assets/top-view-photography-accesories-with-copy-space.jpg'
+import access3 from './assets/oliver-pecker-HONJP8DyiSM-unsplash.jpg'
+import caro1 from './assets/engin-akyurt-Np8r_VcKZzw-unsplash.jpg'
+import caro2 from './assets/diana-simumpande-xZgkFQ4Hijc-unsplash.jpg'
+import caro3 from './assets/macclusky-gbekle-j2xe3HO8lDE-unsplash.jpg'
+import caro4 from './assets/engin-akyurt-mTdOAVYBHEs-unsplash.jpg'
 import './App.css';
 import './AppResponsive.css';
-// import Loader from './components/Loader/Loader'
-
+import { BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom'
+import Gallery from './Pages/Gallery/Gallery'
+import Carousel from 'react-bootstrap/Carousel'
 function App() {
   const [showMenu, setShowMenu] = useState(false)
- 
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
   return (
-    <div className="App">
+    <Router>
+        <Switch>
+          <Route exact path="/" />
+          <Route path="/gallery" component={Gallery}/>
+           
+          
+        </Switch>
+        <div className="App">
            <section className="main-area">
               <nav className="navbar">
                 {/* <Loader/> */}
@@ -28,26 +46,61 @@ function App() {
                   <li><a href="#gallery">Gallery</a></li>
                   <li><a href="#accessories">Gadgets</a></li>
                 </ul>
-                <div className={showMenu ? "menu-toggle is-active" :"menu-toggle"} id="mobile-menu" onClick={()=>{setShowMenu(!showMenu)}}>
+                <div className={showMenu === true ? "menu-toggle is-active" :"menu-toggle"} id="mobile-menu" onClick={()=>{setShowMenu(!showMenu)}}>
                     <span className="bar"></span>
                     <span className="bar"></span>
                     <span className="bar"></span>
                 </div>
               </nav>
               <div className="intro-header">
-                  <h1>I love what I do!</h1>
-                  <p>Check out some of my lastest works</p>
+                  <h1>A photographer based in Ghana, looking forward to helping you bring your ideas into stunning photography effortlessly</h1>
+                  <p>BlassCreatives is an intelligent professional photographer based in Ghana. Check out some of my lastest works below</p>
               </div>
            </section>
            <section className="about-area" id="about">
+               <div className=" carousel">
+                <Carousel activeIndex={index} onSelect={handleSelect}
+                nextIcon={<span><i className="fas fa-chevron-right"></i></span>}
+                prevIcon={<span><i className="fas fa-chevron-left"></i></span>}
+                >
+                    <Carousel.Item>
+                        <img
+                        className="d-block w-100"
+                        src={caro1}
+                        alt="First slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                        className="d-block w-100"
+                        src={caro2}
+                        alt="Second slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                        className="d-block w-100"
+                        src={caro3}
+                        alt="Third slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                        className="d-block w-100"
+                        src={caro4}
+                        alt="Third slide"
+                        />
+                    </Carousel.Item>
+                </Carousel>
+               </div>
                <div className="grid-container">
-                      <div className="grid-50  mobile-grid-100 about-imgs">
+                      <div className="grid-50  mobile-grid-100  about-imgs">
                           <img src={group} alt="group2" className="group-color" loading="lazy" />
                           <img src={HUGHES2} alt="group2" className="HUGHES2" loading="lazy"/>
                           <img src={group} alt="group2" className="group-color2" loading="lazy" />
                       </div>
-                      <div className="grid-10 separator"></div>
-                      <div className="grid-40 mobile-grid-100 text">
+                      {/* <div className="grid-10 separator"></div> */}
+                      <div className="grid-50 mobile-grid-100 text">
                         <h1>About me</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       </div>
@@ -58,33 +111,33 @@ function App() {
                     <h1>Gallery</h1>
                 </div>
                 <div className="my-gallery">
-                      <div className="grid-container gallery-items">
-                          <div className="grid-33 image1"  >
+                      <div className="gallery-items">
+                          <div className="image1"  >
                              {/* <img src={gallery1} alt="galleryImage" className="gallery-img" />  */}
                           </div>
-                          <div className="grid-33 image2"  >
+                          <div className="image2"  >
                              {/* <img src={gallery2} alt="galleryImage" className="gallery-img" />  */}
                           </div>
-                          <div className="grid-33 image3">
+                          <div className="image3">
                              {/* <img src={gallery3} alt="galleryImage" className="gallery-img" />  */}
                           </div>
                       </div>
-                      {/* <div className="grid-container">
-                          <div className="grid-33 image4"  >
-                             <img src={gallery4} alt="galleryImage" className="gallery-img" /> 
-                          </div>
-                          <div className="grid-33 image5"  >
-                             <img src={gallery5} alt="galleryImage" className="gallery-img" /> 
-                          </div>
-                          <div className="grid-33 image6">
-                             <img src={gallery6} alt="galleryImage" className="gallery-img" /> 
-                          </div>
-                      </div> */}
+                      <div className="gallery-items">
+                          <div className="image4"></div>
+                          <div className="image5"  ></div>
+                          <div className="image6"></div>
+                             {/* <img src={gallery4} alt="galleryImage" className="gallery-img" />  */}
+                             {/* <img src={gallery5} alt="galleryImage" className="gallery-img" />  */}
+                             {/* <img src={gallery6} alt="galleryImage" className="gallery-img" />  */}
+                      </div>
                 </div>
                 <div className="view-btn">
-                    <button>View all</button>
+                    <Link to="/gallery">
+                        <button>View all</button>
+                    </Link>
                 </div>  
            </section>
+           {/* accessories */}
            <section className="accessories-area" id="accessories">
                   <div className="background-header">
                         <h1>What's in my bag?</h1>
@@ -142,7 +195,7 @@ function App() {
                             </div>
                             <div className="accessories-item">
                               <div className="grid-container">
-                                  <div className="grid-50 mobile-grid-100">
+                                  <div className="grid-50 mobile-grid-100 mobile-push-100">
                                       <div className="details">
                                             <h4>Storage</h4>
                                             <div className="other-details">
@@ -192,9 +245,38 @@ function App() {
                                             </div>
                                       </div>
                                   </div>
-                                  <div className="grid-50  mobile-grid-100 ">
-                                      <img src={access1} alt="accessories" className="access-img" loading="lazy"/>
+                                  <div className="grid-50  mobile-grid-100 mobile-pull-100">
+                                      <img src={access2} alt="accessories" className="access-img" loading="lazy"/>
                                   </div>
+                              </div>
+                            </div>
+                            <div className="accessories-item">
+                              <div className="grid-container">
+                                  <div className="grid-50  mobile-grid-100 ">
+                                      <img src={access3} alt="accessories" className="access-img" loading="lazy"/>
+                                  </div>
+                                  <div className="grid-50 mobile-grid-100">
+                                      <div className="details">
+                                            <h4>Computers / Mobile devices</h4>
+                                            <div className="other-details">
+                                                <i className="fas fa-caret-right"></i>
+                                                <p>MACBOOK PRO(2019)</p>
+                                            </div>
+                                            <div className="other-details">
+                                                <i className="fas fa-caret-right"></i>
+                                                <p>iPAD PRO 12.5inch</p>
+                                            </div>
+                                            <div className="other-details">
+                                                <i className="fas fa-caret-right"></i>
+                                                <p>iMAC 27 inch</p>
+                                            </div>
+                                            <div className="other-details">
+                                                <i className="fas fa-caret-right"></i>
+                                                <p>iPhone 12 PRO MAX</p>
+                                            </div>
+                                      </div>
+                                  </div>
+                                 
                               </div>
                             </div>
                         </div>
@@ -209,9 +291,10 @@ function App() {
                             <li><a href="#social"><i className="fab fa-instagram"></i></a></li>
                           </ul>
                      </div>
-                    <p>blasscreatives_</p>
+                    <p>BlassCreatives &copy; {new Date().getFullYear()}. Designed by <span><a className="design" href="https://twitter.com/___papakwame">papakwame</a></span></p>
            </footer>
-    </div>
+         </div>
+    </Router>
   );
 }
 

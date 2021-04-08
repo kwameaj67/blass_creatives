@@ -4,8 +4,6 @@
 }
 html{
   scroll-behavior: smooth;
-  width: 100vw;
-  height: 100vh;
 }
 *{
   margin:0;
@@ -18,8 +16,8 @@ html{
   height: 100vh;
   background-image: url("./assets/william-thomas-ny6tO4ItOEY-unsplash.jpg") ;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
   background-position: center;
 }
 /* navbar */
@@ -28,13 +26,13 @@ html{
   justify-content: space-between;
   align-items: center;
   /* background-color: white; */
-  height: 50px;
+  height: 100px;
   width: 100%;
-  padding: 50px 30px;
+  padding: 0px 30px;
   position: relative;
 }
 .navbar .logo-img{
-  width: 100px;
+  width: 30px;
   height: auto;
   cursor: pointer;
 }
@@ -66,8 +64,8 @@ html{
 }
 .menu-toggle .bar{
   display: block;
-  width: 30px;
-  height: 4px;
+  width: 35px;
+  height: 3.2px;
   margin:5px auto;
   border-radius: 5px;
   background-color: white;
@@ -79,25 +77,26 @@ html{
 }
 
 .intro-header {
-  height: 70%;
+  height: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  /* font-size: calc(10px + 2vmin); */
+  text-align: center;
   color: white;
 }
 .intro-header h1{
   color: var(--orange);
-  font-size: 5.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 2%;
+  line-height: 3.5rem;
 }
 .intro-header p{
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 2%;
   margin-top: 1rem;
+  line-height: 2rem;
 }
 
 /* about area */
@@ -105,6 +104,19 @@ html{
 .about-area{
   margin: 6rem 0rem;
   text-align: center;
+}
+.about-area .carousel{
+  margin-bottom: 2rem;
+  position: relative;
+  bottom:50px;
+}
+.about-area .carousel .fas{
+  font-size: 24px;
+  color: white;
+}
+.about-area .carousel img{
+  width: 120vw;
+  height: 100vh;
 }
 .about-area .about-imgs{
   display: flex;
@@ -117,6 +129,8 @@ html{
   width:100px;
   height: auto;
   /* top:40px; */
+  display: flex;
+  align-self: flex-start;
   
 }
 .about-area .group-color2{
@@ -124,15 +138,19 @@ html{
   width:100px;
   height: auto;
   bottom:100px;
-  left: 430px;
+  /* left: 430px; */
+  display: flex;
+  align-self: flex-end;
 }
 .about-area .HUGHES2{
   width:450px;
   height: auto;
   position: relative;
   z-index: 999;
-  left: 40px;
+  /* left: 40px; */
   bottom: 60px;
+  display: flex;
+  align-self: center;
 }
 .about-area .separator{
   width:2px;
@@ -187,36 +205,96 @@ html{
   text-align: center;
 }
 .my-gallery .gallery-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  display: block;
+}
+.my-gallery .image{
+    width: 145px;
+    height: auto;
 }
 .my-gallery .image1{
-  height: 50vh;
+  width:20vw;
+  height: 40vh;
   background-image: url("./assets/755bc551-4b94-4b27-a4bd-7295625995cb 2.jpg") ;
   background-size: cover;
-  /* background-repeat: no-repeat; */
-  background-color: #adcecc;
+  background-repeat: no-repeat;
   background-position: center;
-  /* margin:0rem 0.1rem; */
+  background-color: #adcecc;
+  /* max-width:100%;
+  max-height:100%; */
+  margin: 4px 4px;
+ 
+  
 }
 .my-gallery .image2{
-  height: 50vh;
+  width:20vw;
+  height: 40vh;
   background-image: url("./assets/ayo-ogunseinde-1L5QpkSs5IU-unsplash.jpg") ;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #adcecc;
   background-position: center;
-  /* margin:0rem 0.1rem; */
+  background-color: #adcecc;
+  max-width:100%;
+  max-height:100%;
+  margin: 4px 4px;
+ 
 }
 .my-gallery .image3{
-  height: 50vh;
+  width:20vw;
+  height: 40vh;
   background-image: url("./assets/jd-mason-qvqMQf9mg04-unsplash.jpg") ;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-color: #adcecc;
   background-position: center;
-  /* margin:0rem 0.1rem */
+  background-color: #adcecc;
+  max-width:100%;
+  max-height:100%;
+  margin: 4px 4px;
+ 
 }
+.my-gallery .image4{
+  width:20vw;
+  height: 40vh;
+  background-image: url("./assets/HUGHES2.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #adcecc;
+  max-width:100%;
+  max-height:100%;
+  margin: 4px 4px;
+ 
+}
+.my-gallery .image5{
+  width:20vw;
+  height: 40vh;
+  background-image: url("./assets/quaid-lagan-92YQRw3-__I-unsplash.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #adcecc;
+  max-width:100%;
+  max-height:100%;
+  margin: 4px 4px;
+ 
+}
+.my-gallery .image6{
+  width:20vw;
+  height: 40vh;
+  background-image: url("./assets/oladimeji-odunsi-wecunh3nBrA-unsplash.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #adcecc;
+  max-width:100%;
+  max-height:100%;
+  margin: 4px 4px;
+ 
+}
+
 .my-gallery .gallery-img{
   width:100%;
   height: auto;
@@ -298,7 +376,7 @@ html{
 }
 .accessories-area .accessories-item .access-img{
   width: 500px;
-  height: 500px;
+  height: auto;
 }
 .accessories-area .accessories-item .details{
   text-align: start;
@@ -313,11 +391,13 @@ html{
   color: #494949;
   font-size: 24px;
   font-weight: 400;
+  padding-bottom: 10px;
 }
 .accessories-area .accessories-item .details .other-details .fa-caret-right{
-  font-size: 20px;
+  font-size: 18px;
   color: var(--orange);
   padding-right: 8px;
+  padding-bottom: 20px;
 }
 .accessories-area .accessories-item .details .other-details p{
   color: #494949;
@@ -345,30 +425,41 @@ html{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 .socials ul li{
   display: inline-block;
-  margin:20px 15px;
+  margin:20px 12px;
   list-style: none;
 
 }
 .socials ul li a{
   background-color: var(--orange);
   border-radius: 10px;
-  padding:8px 20px;
-  color:#494949;
+  padding:8px 15px;
+  color:white;
   font-size: 22px;
 }
 .socials ul li a:hover{
   transition: all 0.3s ease-in;
   background-color: var(--orange);
-  color:white
+  color:#494949;
+
 }
 .footer-area p{
   color: white;
-  font-size: 20px;
+  font-size: 13px;
   text-align: center;
   font-weight: 400;
   letter-spacing: 2%;
   margin-top: 20px;
+}
+.footer-area .design {
+  color:var(--orange);
+  font-size: 13px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 2%;
+  margin-top: 20px;
+  text-decoration: none;
 }
