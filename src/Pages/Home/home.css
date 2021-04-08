@@ -37,7 +37,14 @@
     margin-top: 1rem;
     line-height: 2rem;
   }
-  
+  .grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 0rem;
+}
   /* about area */
   
   .about-area{
@@ -116,7 +123,7 @@
   }
   /* gallery */
   .gallery-area{
-    margin: 6rem 0rem;
+    margin: 0rem 0rem;
   }
   .gallery-area  .background-header{
     width: 100%;
@@ -309,7 +316,7 @@
   
   }
   .accessories-area  .accessories-item{
-    margin: 6rem 0rem;
+    /* margin: 6rem 0rem; */
    text-align: center;
     
   }
