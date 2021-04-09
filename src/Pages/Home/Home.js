@@ -263,9 +263,9 @@ const  Home = () => {
            <footer className="footer-area">
                        <div className="socials">
                           <ul>
-                            <li><a href="#social"><i className="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://web.facebook.com/Blass-Creatives-109164497905839/"><i className="fab fa-facebook-f"></i></a></li>
                             <li><a href="#social"><i className="fab fa-twitter"></i></a></li>
-                            <li><a href="#social"><i className="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.instagram.com/blasscreatives_/"><i className="fab fa-instagram"></i></a></li>
                           </ul>
                      </div>
                     <p>BlassCreatives &copy; {new Date().getFullYear()}. Designed by <span><a className="design" href="https://twitter.com/___papakwame">papakwame</a></span></p>
