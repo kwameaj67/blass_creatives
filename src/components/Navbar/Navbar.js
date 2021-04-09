@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import './navbar.css'
 import '../../Pages/Home/responsive.css'
 import logo from '../../assets/blass.png';
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
@@ -14,6 +15,7 @@ const Navbar = () => {
                   <li><a href="#about">About</a></li>
                   <li><a href="#gallery">Gallery</a></li>
                   <li><a href="#accessories">Gadgets</a></li>
+                  <Link to="/contact"> <li><a href="#accessories">Reach me</a></li></Link>
                 </ul>
                 <div className={showMenu === true ? "menu-toggle is-active" :"menu-toggle"} id="mobile-menu" onClick={()=>{setShowMenu(!showMenu)}}>
                     <span className="bar"></span>
