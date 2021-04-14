@@ -1,0 +1,253 @@
+.contact-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 1;
+    background-image:  radial-gradient(#000000 1.75px, transparent 1.75px), radial-gradient(#3b3b3b 1.75px, #000000 1.75px);
+    background-size: 70px 70px;
+    background-position: 0 0,35px 35px;
+}
+.contact-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    margin: 0rem 2rem;
+    
+}
+.go-back button{
+    font-size: 14px;
+    color:var(--orange);
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    /* position: fixed; */
+}
+.go-back button:hover{
+    color: var(--teal);
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+    background-color: transparent;
+}
+/* contact  */
+.contact-heading{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 120px 0px; */
+    margin: 8rem 15rem;
+}
+.contact-heading h1{
+    font-size: 4.5rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2%;
+    line-height: 4rem;
+}
+.contact-heading .email-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contact-heading .email-container p{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2%;
+    line-height: 3.5rem;
+    padding: 20px 0px;
+}
+.contact-heading .email-container button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--orange);
+    font-size: 20px;
+    letter-spacing: 2%;
+    line-height: 4rem;
+    font-weight: 600;
+}
+/* form */
+.form{
+    background-color: #000000;
+    opacity: 1;
+    background-image:  radial-gradient(#000000 1.75px, transparent 1.75px), radial-gradient(#3b3b3b 1.75px, #000000 1.75px);
+    background-size: 70px 70px;
+    background-position: 0 0,35px 35px;
+}
+.contact-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px 0px 100px;
+    margin: 0px 15rem;
+}
+.contact-form-container h1{
+    font-size: 2rem;
+    color: var(--orange);
+    font-weight: 600;
+    letter-spacing: 2%;
+    padding:30px 0px;
+}
+.form-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:14px 0px;
+}
+.form-item label {
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 2%;
+}
+.form-item input::placeholder{
+    color: #3b3b3b;
+}
+.form-item input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--orange);
+    padding: 20px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 70vw;
+}
+.form-item input:active{
+    background-color: transparent;
+    outline: none;
+}
+.form-item input:focus{
+    background-color: transparent;
+    outline: none; 
+}
+
+.form-item .submit-btn{
+    outline: none;
+    border: none;
+    /* background-color: var(--orange); */
+    background-color:transparent;
+    color: white;
+    padding: 20px 0px;
+    font-size: 24px;
+    font-weight: 800;
+    margin:2rem 0rem;
+    border-radius: 2px;
+    width: 100%;
+}
+.form-button .submit-btn:hover{
+    transition:  0.3 ease-in all;
+    background-color:#f15e32
+}
+/* contact-details */
+.contact-details{
+    background-color: #000000;
+    opacity: 1;
+    background-image:  radial-gradient(#000000 1.75px, transparent 1.75px), radial-gradient(#3b3b3b 1.75px, #000000 1.75px);
+    background-size: 70px 70px;
+    background-position: 0 0,35px 35px;
+    margin: 2rem 0rem;
+}
+.contact-details p{
+    font-size: 2rem;
+    color:white;
+    font-weight: 700;
+    letter-spacing: 2%;
+    line-height: 4rem;
+    text-align: center;
+    margin:0rem 2rem;
+}
+/* footer */
+.contact-footer{
+    background-color: #000000;
+    opacity: 1;
+    background-image:  radial-gradient(#000000 1.75px, transparent 1.75px), radial-gradient(#3b3b3b 1.75px, #000000 1.75px);
+    background-size: 70px 70px;
+    background-position: 0 0,35px 35px;
+    text-align: center;
+    padding:10px 10px;
+}
+.contact-footer p{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2%;
+    margin-top: 10px;
+  }
+  @media screen and (max-width:769px){
+    .contact-heading{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0px 30px;
+        margin: 0px 0rem;
+    }
+    .contact-heading h1{
+        color: white;
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: 2%;
+        text-align: center;
+      }
+      .contact-heading .email-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 0px 0px 100px; */
+        margin: 0px 0rem;
+      }
+      .contact-heading .email-container  p{
+        font-size: 13px;
+        color: white;
+        font-weight: 400;
+        letter-spacing: 2%;
+        line-height: 3.0rem;
+        padding-top: 40px;
+      }
+      .contact-heading .email-container  button{
+        font-size: 12px;
+      }
+      .contact-form-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form-container h1{
+        text-align: center;
+    }
+    .form-item{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .form-item label {
+        font-size: 12px;
+        text-align: center;
+    }
+    .form-item input{
+        font-size: 14px;
+        text-align: start;
+        /* width: 100%; */
+    }
+    .form-item input::placeholder{
+        font-size: 14px;  
+    }
+    .form-item .submit-btn{
+        padding: 20px 0px;
+        font-size: 20px;
+    }
+  }
