@@ -29,13 +29,13 @@ const  Home = () => {
            <section className="main-area">
             <ScrollButton scroll={250}/>
               <NavBar/>
-              <div className="intro-header">
-                  <h1>A photographer based in Ghana, looking forward to helping you bring your ideas into stunning photography </h1>
-                  <p>BlassCreatives is an intelligent professional photographer.<br/> Check out some of my lastest works below</p>
+              <div className="intro-header ">
+                  <h1 className="animate__animated animate__fadeInDown animate__delay-2s">A photographer based in Ghana, looking forward to helping you bring your ideas into stunning photography </h1>
+                  <p className="animate__animated animate__fadeInDown animate__delay-3s">BlassCreatives is an intelligent professional photographer.<br/> Check out some of my lastest works below</p>
               </div>
            </section>
            <section className="about-area" id="about">
-               <div className=" carousel">
+               <div className=" carousel animate__animated animate__fadeInUp animate__delay-3.5s">
                 <Carousel activeIndex={index} onSelect={handleSelect}
                 nextIcon={<span><i className="fas fa-chevron-right"></i></span>}
                 prevIcon={<span><i className="fas fa-chevron-left"></i></span>}
@@ -70,14 +70,14 @@ const  Home = () => {
                     </Carousel.Item>
                 </Carousel>
                </div>
-               <div className="grid-container">
-                      <div className="grid-50  mobile-grid-100  about-imgs">
+               <div className="about-me" id="about-myself">
+                      <div className="about-imgs" data-aos="fade-left">
                           <img src={group} alt="group2" className="group-color" loading="lazy" />
                           <img src={HUGHES2} alt="group2" className="HUGHES2" loading="lazy"/>
                           <img src={group} alt="group2" className="group-color2" loading="lazy" />
                       </div>
                       {/* <div className="grid-10 separator"></div> */}
-                      <div className="grid-50 mobile-grid-100 text">
+                      <div className="text" data-aos="fade-right">
                         <h1>About me</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       </div>
@@ -123,11 +123,11 @@ const  Home = () => {
                   <div className="accessories-item-container">
                           <h1>Accessories</h1>
                           <div className="accessories-item">
-                            <div className="grid-container">
-                                <div className="grid-50  mobile-grid-100 ">
+                            <div className="accessory-group">
+                                <div className="accessory-img">
                                     <img src={access1} alt="accessories" className="access-img" loading="lazy"/>
                                 </div>
-                                <div className="grid-50 mobile-grid-100">
+                                <div className="accessory-text">
                                     <div className="details">
                                           <h4>Camera</h4>
                                           <div className="other-details">
@@ -169,10 +169,14 @@ const  Home = () => {
                                           </div>
                                     </div>
                                 </div>
-                            </div>
+                             </div>
+                          </div>
                             <div className="accessories-item">
-                              <div className="grid-container">
-                                  <div className="grid-50 mobile-grid-100 mobile-push-100">
+                              <div className="accessory-group reverse">
+                              <div className="accessory-img">
+                                      <img src={access2} alt="accessories" className="access-img" loading="lazy"/>
+                                  </div>
+                                  <div className="accessory-text">
                                       <div className="details">
                                             <h4>Storage</h4>
                                             <div className="other-details">
@@ -222,17 +226,14 @@ const  Home = () => {
                                             </div>
                                       </div>
                                   </div>
-                                  <div className="grid-50  mobile-grid-100 mobile-pull-100">
-                                      <img src={access2} alt="accessories" className="access-img" loading="lazy"/>
-                                  </div>
                               </div>
                             </div>
                             <div className="accessories-item">
-                              <div className="grid-container">
-                                  <div className="grid-50  mobile-grid-100 ">
+                              <div className="accessory-group">
+                                  <div className="accessory-img">
                                       <img src={access3} alt="accessories" className="access-img" loading="lazy"/>
                                   </div>
-                                  <div className="grid-50 mobile-grid-100">
+                                  <div className="accessory-text">
                                       <div className="details">
                                             <h4>Computers / Mobile devices</h4>
                                             <div className="other-details">
@@ -257,7 +258,6 @@ const  Home = () => {
                               </div>
                             </div>
                         </div>
-                  </div>
 
            </section>
            <footer className="footer-area">

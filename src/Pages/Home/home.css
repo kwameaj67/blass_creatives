@@ -64,6 +64,13 @@
     width: 100vw;
     height: 100vh;
   }
+  .about-area .about-me{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 0rem 10rem;
+  }
   .about-area .about-imgs{
     display: flex;
     flex-direction: column;
@@ -107,11 +114,15 @@
     margin: 0rem 1rem;
     /* margin: 6px 0; */
   }
+  .about-area .text{
+    margin-left: 30px;
+  }
   .about-area .text h1{
     color: var(--orange);
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     text-align: left;
+    line-height: 30px;
   }
   .about-area .text p{
     color: #919191;
@@ -316,17 +327,28 @@
   
   }
   .accessories-area  .accessories-item{
-    /* margin: 6rem 0rem; */
    text-align: center;
     
   }
-  .accessories-area .accessories-item .access-img{
-    width: 500px;
-    height: auto;
+  .accessories-area .accessories-item .accessory-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10rem 0rem;
   }
+  .accessories-area .accessories-item .reverse{
+    flex-direction: row-reverse;
+  }
+  .accessories-area .accessories-item .access-img{
+    width: 450px;
+    height: auto;
+    margin-right: 30px;
+  }
+ 
   .accessories-area .accessories-item .details{
     text-align: start;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .accessories-area .accessories-item .details .other-details{
     display: flex;
@@ -342,7 +364,7 @@
   .accessories-area .accessories-item .details .other-details .fa-caret-right{
     font-size: 18px;
     color: var(--orange);
-    padding-right: 8px;
+    padding-right: 6px;
     padding-bottom: 20px;
   }
   .accessories-area .accessories-item .details .other-details p{
@@ -364,7 +386,7 @@
   
   /* footer-area */
   .footer-area{
-    background-color: #494949;
+    background-color:rgb(49, 49, 49);
     height:24vh;
     display: flex;
     justify-content: center;
