@@ -8,7 +8,7 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
     return (
         <>
-           <nav className="navbar">
+           <nav className="navbar animate__animated animate__fadeInDown animate__delay-1s" >
                 <img className="logo-img" src={logo} alt="brass" style={{width:60,height:40}} loading="lazy" />
                 <ul className={showMenu ? "nav-menu active" : "nav-menu"}>
                   <li><a href="#home">Home</a></li>
