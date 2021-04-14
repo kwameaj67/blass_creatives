@@ -16,7 +16,7 @@ export default function Contact() {
     }
     return (
         <div className="contact-page">
-             <div className="contact-header">  
+             <div className="contact-header animate__animated animate__fadeInDown animate__delay-1s">  
                 <div className="contact-nav">
                     <Link to="/">
                         <img className="logo-img" src={logo} alt="brass" style={{ width: 60, height: 40 }} loading="lazy" />
@@ -29,14 +29,14 @@ export default function Contact() {
                 </div>
             </div>
             <div className="contact-heading">
-                    <h1>Let's talk about you👋🏽</h1>
+                    <h1 className="animate__animated animate__fadeInDown animate__delay-2s">Let's talk about you👋🏽</h1>
                     <div className="email-container">
-                        <p>BlassCreatives is a talented professional photographer based in Accra-Ghana. I've spent years creating amazing photography for clients all over the country. Wanna chat or take project photoshoots or enquires. Just send an email request to book my services 📩</p>
-                        <button onClick={sendEmail}>Emmanuelismael@blasscreatives.com</button>
+                        <p className="animate__animated animate__fadeInDown animate__delay-3s">BlassCreatives is a talented professional photographer based in Accra-Ghana. I've spent years creating amazing photography for clients all over the country. Wanna chat or take project photoshoots or enquires. Just send an email request to book my services 📩</p>
+                        <button onClick={sendEmail} className="animate__animated animate__fadeInDown animate__delay-4s">Emmanuelismael@blasscreatives.com</button>
                     </div>
             </div>
-            <div className="form">
-                <form className="contact-form-container" onSubmit={sendEmail} action="mailto:Emmanuelismael@blasscreatives.com " method="get" encType="text/plain">
+            <div className="form ">
+                <form className="contact-form-container animate__animated animate__fadeInDown animate__delay-4s" onSubmit={sendEmail} action="mailto:Emmanuelismael@blasscreatives.com " method="get" encType="text/plain">
                     {/* <h1>Get in touch with me</h1> */}
                     <div className="form-item">
                         <label className="input-label">Your fullname</label>

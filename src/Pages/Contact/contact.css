@@ -86,7 +86,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 50px 0px 100px;
+    /* padding: 50px 0px 100px; */
     margin: 0px 15rem;
 }
 .contact-form-container h1{
@@ -224,6 +224,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        margin: 0px 0rem;
     }
     .contact-form-container h1{
         text-align: center;
