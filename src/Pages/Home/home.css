@@ -343,15 +343,16 @@
   .accessories-area .accessories-item .access-img{
     width: 450px;
     height: auto;
-    margin-right: 30px;
+    /* margin-right: 30px; */
   }
  
   .accessories-area .accessories-item .details{
     text-align: start;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   .accessories-area .accessories-item .details .other-details{
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
   }
@@ -428,5 +429,5 @@
     font-weight: 400;
     letter-spacing: 2%;
     margin-top: 20px;
-    text-decoration: none;
+    text-decoration: underline;
   }
