@@ -50,6 +50,27 @@
     color: var(--orange);
     background-position: 0 100%;
   }
+  .navbar ul li span{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 5%;
+    transition: 0.1s ease-in all;
+    overflow: hidden;
+    background: linear-gradient(to right, var(--orange), var(--orange) 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+  }
+  .navbar ul li span:hover{
+    transition: 0.1s ease-in all;
+    color: var(--orange);
+    background-position: 0 100%;
+  }
   /* menu bar */
   .menu-toggle{
     display: none;
@@ -85,21 +106,21 @@
     .navbar ul li{
         display: block;
         width: 100%;
-        padding: 20px 0px;
-        text-align: center;
+        padding: 2px 2rem;
+        text-align: left;
         z-index: 9;
     }
-    .navbar ul li a{
+    .navbar ul li a,.navbar ul li span{
         color: white;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 25px;
+        font-weight: 600;
         text-decoration: none;
         letter-spacing: 2%;
         cursor: pointer;
         outline: none;
       
     }
-    .navbar ul li a:hover{
+    .navbar ul li a:hover,.navbar ul li span:hover{
         color: var(--orange);
         transition: all 0.3s ease-in;
     }
@@ -110,7 +131,7 @@
         opacity: 10;
         transition: all 0.4s ease-in;
         width: 100%;
-
+        position: absolute;
     }
     .menu-toggle{
         display: block;
