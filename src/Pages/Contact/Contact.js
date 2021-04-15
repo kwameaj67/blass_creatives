@@ -36,7 +36,7 @@ export default function Contact() {
                     </div>
             </div>
             <div className="form ">
-                <form className="contact-form-container animate__animated animate__fadeInDown animate__delay-4s" onSubmit={sendEmail} action="mailto:Emmanuelismael@blasscreatives.com " method="get" encType="text/plain">
+                <form className="contact-form-container animate__animated animate__fadeInUp animate__delay-4s" onSubmit={sendEmail} action="mailto:Emmanuelismael@blasscreatives.com " method="get" encType="text/plain">
                     {/* <h1>Get in touch with me</h1> */}
                     <div className="form-item">
                         <label className="input-label">Your fullname</label>
