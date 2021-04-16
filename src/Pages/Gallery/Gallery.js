@@ -85,7 +85,7 @@ const Gallery = () => {
                             <li><a href="https://www.instagram.com/blasscreatives_/"><i className="fab fa-instagram"></i></a></li>
                           </ul>
                      </div>
-                    <p>BlassCreatives &copy; {new Date().getFullYear()}. Designed by <span><a className="design" href="https://twitter.com/___papakwame">papakwame</a></span></p>
+                    <p>BlassCreatives &copy; {new Date().getFullYear()}. Made by <span><a className="design" href="https://twitter.com/___papakwame">papakwame</a></span></p>
            </footer>  
         </div>
     )
