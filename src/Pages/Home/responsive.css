@@ -41,7 +41,7 @@
       }
       .intro-header h1{
         color: var(--orange);
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 700;
         letter-spacing: 2%;
       }
@@ -103,11 +103,13 @@
         height: auto;
         z-index: 999;
         margin-right: 0px;
+        margin-bottom: 30px;
       }
       .accessories-area .accessories-item .details{
         text-align: start;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         padding-left: 0px;
+        /* margin:0px; */
       }
       .accessories-area .accessories-item .details .other-details{
         display: flex;
@@ -126,4 +128,15 @@
     .about-area .separator{
         display: none;
     }
+}
+@media screen and (max-width:450px){
+  .accessories-area .accessories-item .access-img{
+    width: 300px;
+    height: auto;
+    z-index: 999;
+    margin-right: 0px;
+  }
+  .intro-header h1{
+    margin-top: 70px;
+  }
 }
