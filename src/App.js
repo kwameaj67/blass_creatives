@@ -5,6 +5,7 @@ import Gallery from './Pages/Gallery/Gallery'
 import Home from './Pages/Home/Home'
 import Contact from './Pages/Contact/Contact'
 import { Spinner } from 'evergreen-ui'
+import ScrollToTop from './components/ScrollToTop'
 
 
 function App() {
@@ -24,11 +25,13 @@ function App() {
        :
        <div className="App">
             <Router>
-              <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/gallery" component={Gallery}/>
-              <Route path="/contact" component={Contact}/>
-              </Switch>
+              <ScrollToTop>
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/gallery" component={Gallery}/>
+                    <Route path="/contact" component={Contact}/>
+                </Switch>
+                </ScrollToTop>
             </Router>
         </div>
     }
