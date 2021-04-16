@@ -103,9 +103,6 @@ const  Home = () => {
                           <div className="image4"></div>
                           <div className="image5"  ></div>
                           <div className="image6"></div>
-                             {/* <img src={gallery4} alt="galleryImage" className="gallery-img" />  */}
-                             {/* <img src={gallery5} alt="galleryImage" className="gallery-img" />  */}
-                             {/* <img src={gallery6} alt="galleryImage" className="gallery-img" />  */}
                       </div>
                 </div>
                 <div className="view-btn">
@@ -209,20 +206,20 @@ const  Home = () => {
                                       <div className="details">
                                             <h4>Tripod</h4>
                                             <div className="other-details">
-                                              <i className="fas fa-caret-right"></i>
-                                              <p>Profoto B10 Air Ttl</p>
+                                                <i className="fas fa-caret-right"></i>
+                                                <p>Profoto B10 Air Ttl</p>
                                             </div>
                                             <div className="other-details">
-                                              <i className="fas fa-caret-right"></i>
-                                              <p>Manfrotto MVMXPRO500US XPRO</p>
+                                                <i className="fas fa-caret-right"></i>
+                                                <p>Manfrotto MVMXPRO500US XPRO</p>
                                             </div>
                                             <div className="other-details">
-                                              <i className="fas fa-caret-right"></i>
-                                              <p>Neewer PRO 100</p>
+                                                <i className="fas fa-caret-right"></i>
+                                                <p>Neewer PRO 100</p>
                                             </div>
                                             <div className="other-details">
-                                              <i className="fas fa-caret-right"></i>
-                                              <p>Joby Gorilla Pod 5k</p>
+                                                <i className="fas fa-caret-right"></i>
+                                                <p>Joby Gorilla Pod 5k</p>
                                             </div>
                                       </div>
                                   </div>
@@ -268,7 +265,7 @@ const  Home = () => {
                             <li><a href="https://www.instagram.com/blasscreatives_/"><i className="fab fa-instagram"></i></a></li>
                           </ul>
                      </div>
-                    <p>BlassCreatives &copy; {new Date().getFullYear()}. Designed by <span><a className="design" href="https://twitter.com/___papakwame">papakwame</a></span></p>
+                    <p>BlassCreatives &copy; {new Date().getFullYear()}. Made by <span><a className="design" href="https://twitter.com/___papakwame">papakwame</a></span></p>
            </footer>  
         </>
     )
