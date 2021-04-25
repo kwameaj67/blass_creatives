@@ -5,7 +5,7 @@
 .main-area{
     width: 100vw;
     height: 100vh;
-    background-image: url("../../assets/william-thomas-ny6tO4ItOEY-unsplash.jpg") ;
+    background-image: url("../../assets/william-thomas-ny6tO4ItOEY-unsplash.webp") ;
     background-size: cover;
     /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
@@ -139,7 +139,7 @@
   .gallery-area  .background-header{
     width: 100%;
     height: 40vh;
-    background-image: url("../../assets/william-thomas-ny6tO4ItOEY-unsplash.jpg") ;
+    background-image: url("../../assets/william-thomas-ny6tO4ItOEY-unsplash.webp") ;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -189,7 +189,7 @@
   .my-gallery .image2{
     width:20vw;
     height: 40vh;
-    background-image: url("../../assets/ayo-ogunseinde-1L5QpkSs5IU-unsplash.jpg") ;
+    background-image: url("../../assets/ayo-ogunseinde-1L5QpkSs5IU-unsplash.webp") ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
